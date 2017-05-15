@@ -4,22 +4,16 @@ createCatSection = function(){
   return newListItem;
 };
 
-createList = function(name, favourite_food, image){
-  var name = document.createElement("li");
-  name.innerText = name;
-  var food = document.createElement("li");
-  food.innerText = favourite_food;
-  var pic = document.createElement("li");
-  pic.innerText = image;
-  return name;
+createList = function(info){
+  var item = document.createElement("li");
+  item.innerText = info;
+  return item;
 };
 
-appendListItems = function(name, favourite_food, image){
-
-};
-
-appendElements = function(section, list){
-  section.appendChild(list);
+appendElements = function(section, name, food, image){
+  section.appendChild(name);
+  section.appendChild(food);
+  section.appendChild(image);
   var catsSection = document.querySelector("#cats");
   catsSection.appendChild(section);
 };
@@ -30,9 +24,11 @@ var CAT_ARRAY = [
 
 var addCat = function(name, favourite_food, image) {
   var catSection = createCatSection();
-  var list = createList(name, favourite_food, image);
+  var name = createList(name);
+  var food = createList(favourite_food);
+  var image = createList(image);
 
-  appendElements(catSection, list);
+  appendElements(catSection, name, food, image);
 }
 
 var app = function() {
