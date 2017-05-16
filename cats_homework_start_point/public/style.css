@@ -6,3 +6,25 @@
 .red-quote{
   color: red;
 }
+
+ul {
+  list-style-type: none;
+  width: 500px;
+  background-color: skyblue;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+}
