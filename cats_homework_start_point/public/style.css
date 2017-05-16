@@ -9,14 +9,17 @@
 
 ul {
   list-style-type: none;
-  width: 500px;
+  width: 400px;
   background-color: skyblue;
   font-family: Helvetica, Arial, Sans-Serif;
+  text-align: center;
+  border-radius: 25px;
+  margin-left: 20px;
 }
 
 li img {
-  float: left;
-  margin: 0 15px 0 0;
+  float: none;
+  border-radius: 25px;
 }
 
 li {
